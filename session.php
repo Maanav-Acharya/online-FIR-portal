@@ -1,0 +1,9 @@
+<?php
+session_start();
+if(!isset($_SESSION['user']))
+	header("Location:http://127.0.0.1:8012/project/home.php");
+if(!isset($_SESSION['admin']))
+	header("Location:http://127.0.0.1:8012/project/home.php");
+if(!isset($_SESSION['off']))
+	header("Location:http://127.0.0.1:8012/project/home.php");
+?>
